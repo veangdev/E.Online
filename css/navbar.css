@@ -1,0 +1,63 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  display: flex;
+  align-items: center;
+  height: var(--base-size-80);
+  background-color: var(--basics-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--width-content);
+  margin: auto;
+}
+.navbar-left {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: var(--base-size-8);
+  cursor: pointer;
+}
+.navbar-left .logo-icon {
+  height: 25px;
+}
+.navbar-left .logo-text {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 70%;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--base-size-20);
+}
+.navbar-center .nav-links {
+  display: flex;
+  gap: 15px;
+}
+.navbar-center .nav-links li {
+  width: fit-content;
+  text-align: center;
+  transition: all 0.8s;
+  text-transform: uppercase;
+  padding: var(--base-size-8);
+  font-size: var(--base-size-12);
+  border-radius: var(--base-size-8);
+  font-weight: var(--font-weight-medium);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar-center .nav-links li a {
+  text-decoration: none;
+  color: var(--gray-900);
+  font-weight: var(--font-weight-bold);
+}
+.navbar-center .nav-links li a:hover {
+  color: var(--blue-500);
+}
+.navbar-right .icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+  cursor: pointer;
+}

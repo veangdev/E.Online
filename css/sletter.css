@@ -1,0 +1,50 @@
+.sletter {
+  height: 30vh;
+  text-align: center;
+  background-color: var(--gray-300);
+  margin-block-start: var(--base-size-32);
+}
+
+.sletter .paragraph {
+  margin: auto;
+  text-align: center;
+  width: calc(var(--width-content) - 40%);
+  color: var(--gray-700);
+}
+
+.input-container {
+  margin: auto;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  padding-block: 16px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-container input[type="text"] {
+  padding: 10px;
+  border: 1px solid var(--gray-300);
+  border-radius: 16px 0 0 16px;
+  outline: none;
+  flex: 1;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+
+.input-container input[type="button"] {
+  padding: 10px 20px;
+  border: 1px solid var(--error-background);
+  border-left: none;
+  border-radius: 0 16px 16px 0;
+  background-color: var(--error-background);
+  color: var(--basics-white);
+  cursor: pointer;
+  font-size: small;
+}
+
+.input-container input[type="button"]:hover {
+  opacity: var(--opacity-medium);
+}

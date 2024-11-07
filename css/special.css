@@ -1,0 +1,108 @@
+.special {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.special .card-container {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  margin-block: 16px;
+}
+
+.special .card-container .card {
+  flex: 1;
+  border: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+.special .card-container .card .image {
+  width: 100%;
+  height: 45vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card .image:hover {
+  cursor: pointer;
+  opacity: var(--opacity-medium);
+}
+.special .card-container .card:nth-child(1) .image {
+  background-image: url("../images/special_product_1.jpg");
+}
+.special .card-container .card:nth-child(2) .image {
+  background-image: url("../images/special_product_2.jpg");
+}
+.special .card-container .card:nth-child(3) .image {
+  background-image: url("../images/special_product_3.jpg");
+}
+.special .card-container .card:nth-child(4) .image {
+  background-image: url("../images/special_product_4.jpg");
+}
+.card .image .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: small;
+  z-index: 10;
+  color: var(--basics-white);
+}
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+}
+.card-footer .name {
+  text-align: center;
+  color: var(--gray-500);
+}
+.card-footer .price {
+  text-align: center;
+  color: var(--black-900);
+  font-weight: var(--font-weight-bold);
+}
+
+.special .special-banner {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  color: var(--basics-white);
+  background-image: url("../images/offer_img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.special .special-banner .content {
+  width: var(--width-content);
+  margin: auto;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.special .special-banner .content h1 {
+  font-size: var(--base-size-60);
+  font-weight: var(--font-weight-medium);
+  font-family: "Times New Roman", Times, serif;
+}
+.special .special-banner .content h3 {
+  font-size: var(--base-size-40);
+}
+.special .special-banner .content button {
+  border: none;
+  padding: 20px 40px;
+  font-size: 32px;
+}

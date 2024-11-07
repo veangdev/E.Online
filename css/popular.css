@@ -1,0 +1,48 @@
+.popular .reflection {
+  height: 16vh;
+}
+.popular .content {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--base-size-16);
+}
+.popular .content .item {
+  flex: 1;
+  border: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--base-size-16);
+}
+.popular .content .item .title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: var(--font-weight-bold);
+  font-size: larger;
+}
+.popular .content .item .item-card {
+  display: flex;
+  flex-direction: row;
+  gap: var(--base-size-16);
+}
+.popular .content .item .item-card .image {
+  width: 140px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popular .content .item .item-card .image:hover {
+  cursor: pointer;
+  opacity: var(--opacity-medium);
+}
+.popular .content .item .item-card .image img {
+  width: 100%;
+  height: 100%;
+}
+.popular .content .item .item-card .label * {
+  text-align: start;
+  font-weight: var(--font-weight-normal);
+}
