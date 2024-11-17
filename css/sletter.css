@@ -1,15 +1,22 @@
 .sletter {
-  height: 30vh;
-  text-align: center;
-  background-color: var(--gray-300);
+  height: 36vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--gray-100);
   margin-block-start: var(--base-size-32);
+  padding: 36px;
 }
-
+.reflection-sletter {
+  height: auto !important;
+  padding: 10px;
+}
 .sletter .paragraph {
   margin: auto;
   text-align: center;
   width: calc(var(--width-content) - 40%);
   color: var(--gray-700);
+  font-size: 1.5rem;
 }
 
 .input-container {

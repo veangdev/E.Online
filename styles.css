@@ -29,6 +29,7 @@ body {
 
 :root {
   font-size: 0.8rem;
+
   --basics-white: #ffffff;
   --white-background: white;
   --scroll-background: #0056b3;
@@ -82,13 +83,12 @@ body {
   --base-size-80: 80px;
   --base-size-100: 100px;
 
-  --width-content: 80%;
+  --width-content: 84%;
 }
 
 .container {
   width: var(--width-content);
   margin: auto;
-  margin-block: 10px;
 }
 
 .reflection {
@@ -96,14 +96,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
   gap: 20px;
+  height: 20vh;
 }
 
 .reflection h1 {
   text-align: center;
   padding: 0px 10px;
   border-left: 4px solid var(--danger-background);
+  font-size: 2rem;
 }
 
 .common-button {
